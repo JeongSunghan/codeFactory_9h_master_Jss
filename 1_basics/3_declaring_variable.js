@@ -66,8 +66,8 @@ console.log(newJeans);
 let noHalDang;
 console.log(noHalDang); //undefined 로 출력된다. (변수는 선언했는데 값이 정의 되지 않았을 때 나오는 것)
 
-//const는 다르다!
-const noHalDang2; // const는 선언을 초기화 해줘야한다!
+//const는 다르다! => const는 선언을 초기화 해줘야한다!
+//const noHalDang2;  
 
 
 
