@@ -28,8 +28,7 @@ console.log(ive);
 
 /** 
  * let 과 var로 변수를 선언했을 때 특징
- * 선언 후 값을 바꿔줄 수 있다~
- * 선언 후 값을 바꿔줄 수 있다~
+ * 선언 후 값을 바꿔줄 수 있다~ 
  * */ 
 
 ive = '안유진';
@@ -68,7 +67,7 @@ let noHalDang;
 console.log(noHalDang); //undefined 로 출력된다. (변수는 선언했는데 값이 정의 되지 않았을 때 나오는 것)
 
 //const는 다르다!
-const noHalDang2; // const는 선언을 초기화 해줘야한다.
+const noHalDang2; // const는 선언을 초기화 해줘야한다!
 
 
 
