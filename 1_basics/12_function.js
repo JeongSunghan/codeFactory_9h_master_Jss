@@ -62,7 +62,7 @@ console.log("---------------------------------");
  * 반환받기
  * return 받기
  *
- * ;이전까지는 작성한 코드는 함수 내부에서 모든 작업이 실행했다.
+ * 이전까지는 작성한 코드는 함수 내부에서 모든 작업이 실행했다.
  * 그러나 x * y 의 결과값을 함수 외부에서, 즉 실행하고 값을 반환받고 싶으면 어떻게 해야되나? -> return 을 사용한다.
  */
 
@@ -101,7 +101,7 @@ console.log("---------------------------------");
 //프레임워크나 라이브러리를 배우면 그때는 이해의 영역, 언어는 단순한 암기의 영역
 
 //파라미터를 한개만 받는 경우 -> 괄호 생략 가능
-const multiply4 = (x) => x * 2;
+const multiply4 = x => x * 2;
 console.log(multiply4(4));
 console.log("---------------------------------");
 
@@ -122,9 +122,10 @@ console.log(multiply6(3)(4)(5));
 console.log("---------------------------------");
 
 const multiplyTwo = (x, y) => {
-  return x * y; //이 함수를 일반함수로 변형이 되나?
+  return x * y; //이 함수를 일반함수로 변형이 되나? = 된다
 };
 
+//multiplyTwo -> 일반함수로 변형
 const multuplyTwo2 = function (x, y) {
   return x * y;
 };
@@ -153,6 +154,7 @@ const multuplyAll = function (...arguments) {
 };
 console.log(multuplyAll(3, 4, 5, 6, 7, 8, 9, 10));
 console.log("---------------------------------");
+
 //즉시 실행 함수  - immediately invoked function
 (function (x, y) {   //이름이 없으면 안된다. 어떻게든 함수에 이름을 정해야한다.  
   console.log(x * y);
