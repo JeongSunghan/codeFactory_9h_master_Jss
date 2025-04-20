@@ -152,7 +152,7 @@ const multuplyAll = function (...arguments) {
   return Object.values(arguments).reduce((a, b) => a * b, 1);
   //arguments의 object에 있는 value 값들을 전부 곱해서 반환해준다.
 };
-console.log(multuplyAll(3, 4, 5, 6, 7, 8, 9, 10));
+console.log(`'reduce 함수 결과': ${multuplyAll(3, 4, 5, 6, 7, 8, 9, 10)}`);
 console.log("---------------------------------");
 
 //즉시 실행 함수  - immediately invoked function
