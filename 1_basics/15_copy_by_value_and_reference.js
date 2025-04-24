@@ -95,8 +95,24 @@ console.log(yuJin5);
 //Spread Operator 잘 다뤄야 하는 이유는 `순서가 중요!!`
 const yuJin6 = {
     name: '코드팩토리',
-    ...yuJin3
+    ...yuJin3,
     //yujin3는 원래 name이 '안유진'이라는 값을 갖고있다. 그렇다면 위에 name을 넣어준다면?
 };
 console.log(yuJin6);    //name이 변경되지 않음 
-//순서가 중요 : name을 선언해도, 밑에서 스프레드를 했고, 스프레드에서 name 값이 있었기 때문에 yuJin3에 있는 name 키 값으로 
+//이미 스프레드를 통해 name 키·값이 뒤에 오므로 앞에서 선언한 값은 덮어써져서 적용되지 않는 것
+
+const yuJin7 = {
+    ...yuJin3,
+    name: '코드팩토리',
+};
+console.log(yuJin7); //이번엔 순서가 스프레드 이후 name을 변경했으므로, 변경한 값으로 적용
+
+//array도 마찬가지
+const numbers = [1, 3, 5];
+const numbers2 = [
+    10,
+    ...numbers,
+];
+console.log(numbers2);      //10을 앞에 넣으면 10, 1, 3, 5가 되고, 뒤에 넣으면 1, 3, 5, 10
+
+//따라서, spread operator는 위치(순서)가 굉장히 중요하다!
